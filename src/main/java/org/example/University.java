@@ -1,5 +1,7 @@
 package org.example;
 
+import org.example.enums.StudyProfile;
+
 public class University {
     String id;
     String fullName;
@@ -15,23 +17,23 @@ public class University {
         this.mainProfile = mainProfile;
     }
 
-    public String id() {
+    public String getId() {
         return id;
     }
 
-    public String fullName() {
+    public String getFullName() {
         return fullName;
     }
 
-    public String shortName() {
+    public String getShortName() {
         return shortName;
     }
 
-    public int yearOfFoundation() {
+    public int getYearOfFoundation() {
         return yearOfFoundation;
     }
 
-    public StudyProfile mainProfile() {
+    public StudyProfile getMainProfile() {
         return mainProfile;
     }
 
@@ -62,6 +64,6 @@ public class University {
 
     @Override
     public String toString() {
-        return String.format("id = %s, fullName = %s, shortName = %s, yearOfFoundation = %d, mainProfile = %s", id, fullName, shortName, yearOfFoundation, mainProfile.toString());
+        return String.format("%s, %s, %s, %d, %s", id, fullName, shortName, yearOfFoundation, mainProfile.toString());
     }
 }

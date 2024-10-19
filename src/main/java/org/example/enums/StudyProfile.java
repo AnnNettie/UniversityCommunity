@@ -1,11 +1,13 @@
-package org.example;
+package org.example.enums;
 
 public enum StudyProfile {
+    UNKNOWN ("Неизвестный"),
     MEDICINE ("Медицина"),
     CHEMISTRY ("Химия"),
     MATHEMATICS ("Математика"),
     HISTORY ("История"),
-    PHYSICS ("Физика");
+    PHYSICS ("Физика"),
+    LINGUISTICS ("Лингвистика");
 
     public String profileName;
 

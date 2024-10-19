@@ -6,7 +6,7 @@ public class Student {
     int currentCourseNumber;
     float avgExamScore;
 
-    public Student(String fullName, String universityId, int currentCourseNumber, float avgExamScore) {
+    public Student(String universityId, String fullName, int currentCourseNumber, float avgExamScore) {
         this.fullName = fullName;
         this.universityId = universityId;
         this.currentCourseNumber = currentCourseNumber;
@@ -51,6 +51,6 @@ public class Student {
 
     @Override
     public String toString() {
-        return String.format("fullName = %s, universityId = %s, currentCourseNumber = %d, avgExamScore = %.2f", fullName, universityId, currentCourseNumber, avgExamScore);
+        return String.format("%s, %s, %d, %.2f", universityId, fullName, currentCourseNumber, avgExamScore);
     }
 }
